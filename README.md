@@ -1,2 +1,2 @@
 # ChallengeTourist
-Desafio de template simples e js
+Desafio de template simples com html, css, js.
