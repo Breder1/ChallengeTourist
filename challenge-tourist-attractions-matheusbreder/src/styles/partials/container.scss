@@ -1,0 +1,193 @@
+.tourist-container {
+    max-width: 850px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tourist-title {
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 700;
+    color: $black-300;
+    margin: 32px 0;
+    padding-left: 60px;
+}
+
+.tourist-form-img-input {
+    font-size: 10px;
+    position: absolute;
+}
+
+.tourist-form-content-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.tourist-form-title-input {
+    width: 100%;
+    height: 56px;
+    border: 2px solid $white-200;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.tourist-form-lr {
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.tourist-form-description-input {
+    width: 100%;
+    height: 136px;
+    border: 2px solid $white-200;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.tourist-form-submit-button {
+    max-width: 121px;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    color: $white-100;
+    background: $red-100;
+    border: 1px solid $red-100;
+    border-radius: 8px;
+    transition: background-color 0.2s linear;
+    margin-left: auto;
+    display: block;
+
+    &:hover {
+        background: $red-300;
+    }
+
+    &:active {
+        background: $red-100;
+    }
+}
+
+.tourist-form-img-wrapper {
+    max-width: 288px;
+    width: 100%;
+    height: 212px;
+    border: 2px solid $white-200;
+    border-radius: 8px;
+    position: relative;
+}
+
+.tourist-infocard-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 576px;
+    width: 100%;
+    background: $white-100;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 16px;
+    margin-inline: 24px;
+}
+
+.description-cards {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 24px;
+    color: #858585;
+}
+
+.subtitle-cards {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 24px;
+    color: $black-100;
+}
+
+.tourist-infocard-images {
+    width: 288px;
+    height: 212px;
+}
+
+.tourist-sd-infocard {
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 24px;
+}
+
+.tourist-name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 192px;
+    margin-left: 36px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1440px) {
+    .tourist-form-content-right {
+        margin-top: 24px;
+    }
+
+    .tourist-form-submit-button {
+        width: 100%;
+
+        max-width: 100%;
+    }
+    .tourist-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .tourist-infocard-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        margin-bottom: 30px;
+    }
+
+    .tourist-sd-infocard {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .tourist-form-description-input {
+        width: 100%;
+        height: 136px;
+        border: 2px solid $white-200;
+        border-radius: 8px;
+    }
+    .img-preview {
+        width: 100%;
+        height: 100%;
+    }
+    .tourist-inputs {
+        width: 100%;
+
+        flex-direction: column;
+    }
+    .tourist-title {
+        padding: 20px 10px;
+        text-align: left;
+        font-size: 24px;
+        margin: 0;
+    }
+    .tourist-form-lr {
+        margin-left: 0;
+    }
+
+    .subtitle-infocard {
+        margin: 10px 0 15px 0;
+    }
+
+    .top-infocard-images {
+        width: 100%;
+    }
+
+    .description-cards {
+        padding: 0 10px 5px;
+    }
+}

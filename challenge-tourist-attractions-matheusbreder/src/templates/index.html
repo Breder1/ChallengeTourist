@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio Atrações turisticas</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <main>
+            <section class="tourist-container">
+                <h1 class="tourist-title">Adicionar um Ponto Turístico</h1>
+
+                <form class="tourist-form">
+                    <div class="tourist-inputs">
+                        <div class="tourist-form-img-wrapper">
+                            <label class="tourist-form-label-img" for="Imagem">
+                                <input
+                                    class="tourist-form-img-input"
+                                    id="imgInp"
+                                    type="file"
+                                    name="imagem"
+                                />
+                            </label>
+                            <img class="img-preview" id="preview" src="#" />
+                        </div>
+                        <div class="tourist-form-content-right">
+                            <div class="tourist-form-lr">
+                                <!-- <label class="tourist-form-label-title" for="titulo"></label> -->
+                                <input
+                                    class="tourist-form-title-input"
+                                    id="titulo"
+                                    type="text"
+                                    name="titulo"
+                                    placeholder="Título"
+                                />
+                            </div>
+
+                            <div class="tourist-form-lr">
+                                <!-- <label
+                  class="tourist-form-label-description"
+                  for="descricao"
+                ></label> -->
+                                <input
+                                    class="tourist-form-description-input"
+                                    id="descricao"
+                                    type="text"
+                                    name="descricao"
+                                    placeholder="Descrição"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tourist-form-submit-button" type="submit">
+                        Adicionar
+                    </button>
+                </form>
+            </section>
+            <section class="">
+                <h2 class="tourist-title">Pontos Turísticos</h2>
+                <div class="tourist-result">
+                    <div class="tourist-result-head">
+                        <ul id="lista" class="tourist-name"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="bundle.js"></script>
+    </body>
+</html>
